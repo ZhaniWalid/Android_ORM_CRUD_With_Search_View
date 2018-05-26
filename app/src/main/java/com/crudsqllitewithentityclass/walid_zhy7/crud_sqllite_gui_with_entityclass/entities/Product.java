@@ -16,7 +16,6 @@ public class Product {
 
     public Product(String name, int quantity) {
         this.name = name;
-
         this.quantity = quantity;
     }
 

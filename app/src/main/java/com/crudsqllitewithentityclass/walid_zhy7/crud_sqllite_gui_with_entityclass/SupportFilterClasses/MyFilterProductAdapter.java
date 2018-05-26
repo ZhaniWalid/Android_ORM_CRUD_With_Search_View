@@ -36,7 +36,7 @@ public class MyFilterProductAdapter extends RecyclerView.Adapter<MyFilterHolder>
     List<Product>   filterList;
     CustomFilter    filter;
     ProductAdapter  productAdapter;
-    SqliteDatabase sqliteDatabase;
+    SqliteDatabase  sqliteDatabase;
     List<Product>   listProducts;
     private Context context;
     private boolean isDeleted = false;
@@ -46,8 +46,8 @@ public class MyFilterProductAdapter extends RecyclerView.Adapter<MyFilterHolder>
         // for search view : filter
         this.context      = context;
         this.listProducts = listProducts;
-        this.filterList   =   listProducts;
-        sqliteDatabase = new SqliteDatabase(context);
+        this.filterList   = listProducts;
+        sqliteDatabase    = new SqliteDatabase(context);
     }
 
     // for search view : filter
@@ -103,7 +103,6 @@ public class MyFilterProductAdapter extends RecyclerView.Adapter<MyFilterHolder>
                     Toast.makeText(context, "Deleting Product Succeeded", Toast.LENGTH_LONG).show();
                 }else {
                     Toast.makeText(context, "Deleting Product Failed,Please Try Again", Toast.LENGTH_LONG).show();
-
                 }
             }
         });
@@ -169,6 +168,8 @@ public class MyFilterProductAdapter extends RecyclerView.Adapter<MyFilterHolder>
                 Toast.makeText(context, "Task Update : cancelled", Toast.LENGTH_LONG).show();
             }
         });
+
+
         builder.show();
     }
 

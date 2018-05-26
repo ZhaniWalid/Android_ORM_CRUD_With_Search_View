@@ -42,7 +42,7 @@ public class CustomFilter extends Filter {
                 //CHECK
                 if(filterList.get(i).getName().toUpperCase().contains(constraint))
                 {
-                    //ADD PLAYER TO FILTERED PLAYERS
+                    //ADD PRODUCT TO FILTERED PRODUCTS
                     filteredProducts.add(filterList.get(i));
                 }
             }
